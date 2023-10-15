@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
-def do_calc
+def do_calc(&this_block)
   if block_given?
-    num_one = 7
-    num_two = 9
-    yield num_one, num_two
+    this_block.yield(7, 9)
   else
     puts 'No block given.'
   end
