@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # class Book
-
 class Book
   attr_reader :author, :title, :count
 
