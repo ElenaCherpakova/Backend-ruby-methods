@@ -39,13 +39,13 @@ puts new_array
 puts '-' * 50
 puts 'Sorting alphabetically by title'
 
-new_array_author = book_array.sort do |a, b|
+new_array_title = book_array.sort do |a, b|
   title1 = a.title.downcase
   title2 = b.title.downcase
   title1 <=> title2
 end
 
-puts new_array_author
+puts new_array_title
 
 puts '-' * 50
 puts 'Sorting alphabetically by copies'
